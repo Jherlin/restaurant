@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            Final Project: Restaurant Site
+            Mock Website for Essex Pearl
+            
+            Author: Jherlin
+            Date: 04/15/2022
+
+            Filename: reservation.html
+        -->
+
+        <title>Essex Pearl</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="Pearl_Logo.jpeg" rel="icon" />
+        <link href="reset.css" rel="stylesheet" />
+        <link href="style_4.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+        <header class="wrapper">
+
+            <div class="info">
+                <p>Essex Pearl, 115 Delancey St, New York &nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 347-899-4998</p>
+            </div>
+
+            <div class="icons">
+                <a href="https://www.facebook.com/pages/category/American-Restaurant/Essex-Pearl-407810346462747/"
+                 target="_blank" id="FB"><img src="Facebook_Icon.png" 
+                    alt="Facebook" /></a>
+                <a href="https://www.instagram.com/essexpearl/" target="_blank"><img 
+                    src="Instagram_Icon.png" alt="Instagram" /></a>
+            </div>
+
+        </header>
+        
+        <section>
+            <div class="pearl">
+                <img src="Pearl_logo_1.png" alt="Essex Pearl"/>
+            </div>
+            
+            <nav class="horizontal">
+                <a id="navicon" href="#"><img src="navicon.png" alt="" /></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+
+        <section>
+            <img src="The_Market.jpeg" alt=""/>
+        </section>
+
+        <h1 class="book">Book a Table</h1>
+
+        <form>
+            <div class="upper">
+                <input type="text" id="fname" name="firstname" placeholder="Full Name" required>
+                <input type="text" id="email" name="email" placeholder="Email">
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone Number" required>
+            </div>
+
+            <div class="lower">
+                <select name="person" id="person">
+                    <option value="1 person">1 Person</option>
+                    <option value="2 person">2 Person</option>
+                    <option value="3 person">3 Person</option>
+                    <option value="4 person">4 Person</option>
+                </select>
+
+                <input type="date" id="reservation" name="reservation" required>
+
+                <select name="time" id="time">
+                    <option value="1:00">1:00pm</option>
+                    <option value="2:00">2:00pm</option>
+                    <option value="3:00">3:00pm</option>
+                    <option value="4:00">4:00pm</option>
+                    <option value="5:00">5:00pm</option>
+                    <option value="6:00">6:00pm</option>
+                    <option value="6:00">7:00pm</option>
+                </select>
+            </div>
+
+            <div>
+                <a href="#">
+                    <button class="button">Book a Table</button>
+                </a>
+            </div>
+        </form>
+
+        <footer>
+            <nav class="navigation">
+                <img src="Pearl_logo_1.png" alt="" />
+            </nav>
+
+            <section id="contactInfo">
+                <h1>CONTACT INFO</h1>
+                <p>115 Delancey St, New York</p>
+                <p>347-899-4998</p>
+                <p>Brunch: Sat – Sun 11AM-3:30PM<br/>
+                    Dinner: Wed – Fri 1-7PM<br/>
+                    Dinner: Sat 12-7PM
+                </p>
+            </section>
+        </footer>
+       
+    </body>
+</html>

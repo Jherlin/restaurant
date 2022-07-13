@@ -1,0 +1,720 @@
+@charset "utf-8";
+
+/*
+    Final Project: Restaurant Site
+    Mock Website for Essex Pearl
+
+    Author: Jherlin
+    Date: 04/15/2022
+
+    Filename: style_2.css
+
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+    font-family: Josefin Sans,sans-serif;
+    font-size: 12px;
+}
+ 
+body {
+    margin: 0px auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+/* Body Header Styles */
+
+body header {
+    background: #105362;   
+}
+ 
+.wrapper {
+    padding: 40px 0px 40px 0px;
+}
+
+body > header > div > a > img {
+    height: 25px;
+    width: auto;
+}
+
+body > header > div.info {
+    color: #f2f2f2;
+    padding: 0px 0px 0px 30px;
+    margin-top: -7px;
+    font-size: 18px;
+    float: left;
+}
+
+body > header > div.icons {
+    margin-top: -15px;
+    margin-right: 30px;
+    float: right;
+}
+
+body > header > div > a#FB {
+    padding-right: 10px;
+}
+
+/* Horizonal Navigation Styles */
+
+nav.horizontal {
+    background-color: white;
+    min-height: 2em;
+}
+
+nav.horizontal li {
+    color: #343434;
+    display: block;
+    line-height: 2em;
+    text-transform: uppercase;
+    font-size: 23px;
+    float: left;
+    padding-right: 40px;
+}
+ 
+nav.horizontal a {
+    display: block;
+    font-size: 1em;
+}
+ 
+nav.horizontal a:visited, nav.horizontal a:link {
+    color: #343434;
+}
+ 
+nav.horizontal a:hover, nav.horizontal a:active {
+    border-bottom: 3px solid #105362;
+}
+
+section > div.pearl > img {
+    height: 170px;
+    width: auto;
+}
+section > div.pearl {
+    padding-left: 60px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+    float: left;
+}
+
+nav.horizontal {
+    padding: 60px 0px 0px 0px;
+    margin-right: 15px;
+    float: right;
+}
+
+ /* Main Styles */
+
+section > img {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.third-txt {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.third-txt {
+    position: absolute;
+    font-size: 10rem;
+    color: white;
+    top: 50%;
+    left: 50%;
+    left: 50%;
+    text-shadow:0 0 10px black;
+}
+
+/* Left Column */
+
+.LeftColumn {
+    float: left;
+    width: 50%;
+    line-height: 4rem;
+    padding-left: 230px;
+}
+
+.LeftColumn h3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 4rem;
+}
+
+.LeftColumn p {
+    font-size:2.7rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.LeftColumn .sub {
+    font-size: 1.9rem;
+    font-weight: 100;
+    margin-top: -30px;
+
+}
+
+/* Right Column */
+
+.RightColumn {
+    margin-top: 90px;
+    float: left;
+    width: 50%;
+    padding-left: 150px;
+}
+
+.RightColumn {
+    float: left;
+    width: 50%;
+    line-height: 4rem;
+}
+
+.RightColumn p {
+    font-size:2.7rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.RightColumn .sub {
+    font-size: 1.9rem;
+    font-weight: 100;
+    margin-top: -30px;
+
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: white;
+    clear: left;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 3px solid #105362;
+}
+
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+body > footer > nav > img {
+    height: 230px;
+    width: auto;
+    margin-top: -25px;
+}
+
+body > footer > .navigation {
+    float: left;
+    margin-left: 30px;
+}
+
+body > footer > section {
+    float: right;
+    font-size: 1.7rem;
+    line-height: 35px;
+    color: #105362;
+    margin-right: 50px;
+    margin-bottom: 17px;
+    margin-top: -10px;
+}
+
+body > footer > section > h1 {
+    font-size: 1.9rem;
+}
+
+/* Navicon Style */
+
+a#navicon {
+    display: none;
+}
+
+/* New Styles Added Below */
+
+/* ===========================
+   Mobile Styles: 0px to 480px
+   ===========================
+*/
+@media only screen and (max-width: 480px) {
+
+    body > section > nav.horizontal > ul > li {
+        float: left;
+    }
+
+    body > header {
+        display: none;
+    }
+    
+    body > footer {
+        display: none;
+    }
+
+    a#navicon {
+        display: block;
+        float: right;
+        padding: 0px 0px 0px 0px;
+        margin: -20px 0px 0px 0px;
+        border-bottom: none;
+    }
+     
+    nav.horizontal ul {
+        display: none;
+    }
+
+    a#navicon:hover+ul, nav.horizontal ul:hover {
+        display: block;
+    }
+
+    section > div.pearl > img {
+        height: 120px;
+        width: auto;
+    }
+    section > div.pearl {
+        padding-left: 10px;
+        padding-bottom: 10px;
+        margin-top: -3px;
+        margin-bottom: -30px;
+        float: left;
+    }
+
+    /* Main Styles */
+
+    section > img {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+    }
+
+    .third-txt {
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .third-txt {
+        position: absolute;
+        font-size: 3rem;
+        color: white;
+        top: 25%;
+        left: 50%;
+        left: 50%;
+        text-shadow:0 0 10px black;
+    }
+
+    /* Left Column */
+
+    .LeftColumn {
+        float: left;
+        width: 50%;
+        line-height: 4rem;
+        padding-left: 0px;
+    }
+
+    .LeftColumn h3 {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 2rem;
+    }
+
+    .LeftColumn p {
+        font-size:1.7rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    .LeftColumn .sub {
+        font-size: 1.2rem;
+        font-weight: 100;
+        margin-top: -30px;
+
+    }
+
+    /* Right Column */
+
+    .RightColumn {
+        margin-top: 90px;
+        float: left;
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    .RightColumn {
+        float: left;
+        width: 50%;
+        line-height: 4rem;
+    }
+
+    .RightColumn p {
+        font-size:1.7rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    .RightColumn .sub {
+        font-size: 1.2rem;
+        font-weight: 100;
+        margin-top: -30px;
+    }
+}
+
+/* ================================
+Tablet Styles: 481px and greater
+===================================
+*/
+@media only screen and (min-width: 481px) {
+
+    body > section > nav.horizontal > ul > li {
+        float: left;
+
+    }
+
+    body > header {
+        display: none;
+    }
+    
+    body > footer {
+        display: none;
+    }
+
+    a#navicon {
+        display: block;
+        float: right;
+        padding: 0px 0px 0px 0px;
+        margin: -20px 0px 0px 0px;
+        border-bottom: none;
+    }
+     
+    nav.horizontal ul {
+        display: none;
+    }
+
+    a#navicon:hover+ul, nav.horizontal ul:hover {
+        display: block;
+    }
+
+    section > div.pearl > img {
+        height: 120px;
+        width: auto;
+    }
+    section > div.pearl {
+        padding-left: 10px;
+        padding-bottom: 10px;
+        margin-top: -3px;
+        margin-bottom: -30px;
+        float: left;
+    }
+
+    /* Main Styles */
+
+    section > img {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+    }
+
+    .third-txt {
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .third-txt {
+        position: absolute;
+        font-size: 3rem;
+        color: white;
+        top: 20%;
+        left: 50%;
+        left: 50%;
+        text-shadow:0 0 10px black;
+    }
+
+    /* Left Column */
+
+    .LeftColumn {
+        float: left;
+        width: 50%;
+        line-height: 4rem;
+        padding-left: 0px;
+    }
+
+    .LeftColumn h3 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+    }
+
+    .LeftColumn p {
+        font-size:1.7rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    .LeftColumn .sub {
+        font-size: 1.2rem;
+        font-weight: 100;
+        margin-top: -30px;
+
+    }
+
+    /* Right Column */
+
+    .RightColumn {
+        margin-top: 90px;
+        float: left;
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    .RightColumn {
+        float: left;
+        width: 50%;
+        line-height: 4rem;
+    }
+
+    .RightColumn p {
+        font-size:1.7rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    .RightColumn .sub {
+        font-size: 1.2rem;
+        font-weight: 100;
+        margin-top: -30px;
+    }
+}
+
+/* =================================
+   Desktop Styles: 769px and greater
+   =================================
+*/
+@media only screen and (min-width: 769px) {
+
+
+    /* Body Header Styles */
+    body > header {
+        display: block;
+    }
+    
+    body > footer {
+        display: block;
+    }
+    body header {
+        background: #105362;   
+    }
+    
+         
+    nav.horizontal ul {
+        display: block;
+    }
+
+    /* Body Header Styles */
+
+    body header {
+        background: #105362;   
+    }
+    
+    .wrapper {
+        padding: 40px 0px 40px 0px;
+    }
+
+    body > header > div > a > img {
+        height: 25px;
+        width: auto;
+    }
+
+    body > header > div.info {
+        color: #f2f2f2;
+        padding: 0px 0px 0px 30px;
+        margin-top: -7px;
+        font-size: 18px;
+        float: left;
+    }
+
+    body > header > div.icons {
+        margin-top: -15px;
+        margin-right: 30px;
+        float: right;
+    }
+
+    body > header > div > a#FB {
+        padding-right: 10px;
+    }
+
+    /* Horizonal Navigation Styles */
+
+    nav.horizontal {
+        background-color: white;
+        min-height: 2em;
+    }
+
+    nav.horizontal li {
+        color: #343434;
+        display: block;
+        line-height: 2em;
+        text-transform: uppercase;
+        font-size: 23px;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    nav.horizontal a {
+        display: block;
+        font-size: 1em;
+    }
+    
+    nav.horizontal a:visited, nav.horizontal a:link {
+        color: #343434;
+    }
+    
+    nav.horizontal a:hover, nav.horizontal a:active {
+        border-bottom: 3px solid #105362;
+    }
+
+    section > div.pearl > img {
+        height: 170px;
+        width: auto;
+    }
+    section > div.pearl {
+        padding-left: 60px;
+        margin-top: -20px;
+        margin-bottom: -25px;
+        float: left;
+    }
+
+    nav.horizontal {
+        padding: 60px 0px 0px 0px;
+        margin-right: 15px;
+        float: right;
+    }
+
+    /* Main Styles */
+
+    section > img {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+    }
+
+    .third-txt {
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .third-txt {
+        position: absolute;
+        font-size: 10rem;
+        color: white;
+        top: 50%;
+        left: 50%;
+        left: 50%;
+        text-shadow:0 0 10px black;
+    }
+
+    /* Left Column */
+
+    .LeftColumn {
+        float: left;
+        width: 50%;
+        line-height: 4rem;
+        padding-left: 230px;
+    }
+
+    .LeftColumn h3 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 4rem;
+    }
+
+    .LeftColumn p {
+        font-size:2.7rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    .LeftColumn .sub {
+        font-size: 1.9rem;
+        font-weight: 100;
+        margin-top: -30px;
+
+    }
+
+    /* Right Column */
+
+    .RightColumn {
+        margin-top: 90px;
+        float: left;
+        width: 50%;
+        padding-left: 150px;
+    }
+
+    .RightColumn {
+        float: left;
+        width: 50%;
+        line-height: 4rem;
+    }
+
+    .RightColumn p {
+        font-size:2.7rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    .RightColumn .sub {
+        font-size: 1.9rem;
+        font-weight: 100;
+        margin-top: -30px;
+
+    }
+
+    /* Footer Styles */
+
+    footer {
+        background-color: white;
+        clear: left;
+        padding-top: 20px;
+        margin-top: 20px;
+        border-top: 3px solid #105362;
+    }
+
+    footer::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    body > footer > nav > img {
+        height: 230px;
+        width: auto;
+        margin-top: -25px;
+    }
+
+    body > footer > .navigation {
+        float: left;
+        margin-left: 30px;
+    }
+
+    body > footer > section {
+        float: right;
+        font-size: 1.7rem;
+        line-height: 35px;
+        color: #105362;
+        margin-right: 50px;
+        margin-bottom: 17px;
+        margin-top: -10px;
+    }
+
+    body > footer > section > h1 {
+        font-size: 1.9rem;
+    }
+    /* Navicon Style */
+
+    a#navicon {
+        display: none;
+    }
+}
